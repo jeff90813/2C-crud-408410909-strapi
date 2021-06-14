@@ -10,6 +10,14 @@
     },
     {
       "method": "GET",
+      "path": "/crud_ram",
+      "handler": "ram.crudPage",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
       "path": "/rams/count",
       "handler": "ram.count",
       "config": {
