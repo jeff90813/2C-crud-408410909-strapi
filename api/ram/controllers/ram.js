@@ -106,4 +106,18 @@ module.exports = {
       console.log(err);
     }
   },
+  crud_delete: async(ctx) => {
+    let id = ctx.params.id;
+
+  try {
+    // await db.query('DELETE FROM books WHERE id = ?', [id]);
+    const response = await fetch(`http://localhost:1337/rams/${id}`, {
+      method: 'delete',
+    });
+    const data = await response.json();
+  } catch (err) {
+    console.log(err);
+  }
+  return await ctx.redirect('/crud_ram');
+  }
 };

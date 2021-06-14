@@ -42,8 +42,16 @@
     },
     {
       "method": "POST",
-      "path": "/crud_ram/update",
+      "path": "/crud_ram/update/",
       "handler": "ram.crud_update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/crud_ram/delete/:id",
+      "handler": "ram.crud_delete",
       "config": {
         "policies": []
       }
