@@ -18,6 +18,22 @@
     },
     {
       "method": "GET",
+      "path": "/crud_ram/add",
+      "handler": "ram.crud_addPage",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/crud_ram/add",
+      "handler": "ram.crud_add",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
       "path": "/rams/count",
       "handler": "ram.count",
       "config": {
