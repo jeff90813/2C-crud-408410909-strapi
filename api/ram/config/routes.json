@@ -34,6 +34,22 @@
     },
     {
       "method": "GET",
+      "path": "/crud_ram/edit/:id",
+      "handler": "ram.crud_editPage",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/crud_ram/update",
+      "handler": "ram.crud_update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
       "path": "/rams/count",
       "handler": "ram.count",
       "config": {
